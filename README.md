@@ -1,5 +1,5 @@
 ```bash
-apt update && apt install tmux nano clang -y
+apt update && apt install tmux nano clang p7zip-full p7zip-rar aria2 gh -y
 git clone https://github.com/thewh1teagle/israwave
 cd israwave
 wget https://huggingface.co/datasets/Cossale/Guj_dataset/resolve/main/guj_dataset.tar?download=true
