@@ -55,18 +55,12 @@ gh auth login
 ## Reproducing Checkpoint
 1. Process dataset:
 ```bash
-python process_datasets.py --hours 5  # Loads from parquet and formats to LJSpeech format
+python process_datasets.py --hours 5  # Loads from parquet and formats to LJSpeech format (Can go upto 40 hours)
 ```
 2. Run notebooks in sequence:
-- prepare.ipynb: Prepares dataset splits, generates stats
-- train.ipynb: Trains model with provided configs
-- export.ipynb: Exports to ONNX and tests inference
-
-## Notebooks
-
-- **prepare.ipynb**: Downloads dataset, splits train/val, generates statistics
-- **train.ipynb**: Main training script with checkpointing and monitoring
-- **export.ipynb**: Exports trained model to ONNX format and tests inference
+- **prepare.ipynb**: Prepares dataset splits, generates stats
+- **train.ipynb**: Trains model with provided configs
+- **export.ipynb**: Exports to ONNX and tests inference
 
 ## Training Performance
 
