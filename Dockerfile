@@ -3,8 +3,9 @@ FROM python:3.11-slim
 # Install system dependencies for espeak
 RUN apt-get update && apt-get install -y --no-install-recommends \
     espeak-ng \
+    wget \
     && rm -rf /var/lib/apt/lists/*
-
+    
 RUN pip install --no-cache-dir --upgrade pip
 
 # Install dependencies with specific versions to avoid conflicts
